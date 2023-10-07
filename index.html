@@ -1,340 +1,138 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Angringan Kenangan Senja</title>
-
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
-    rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-  <!-- Feather Icons -->
-  <script src="https://unpkg.com/feather-icons"></script>
-
-  <!-- My Style -->
-  <link rel="stylesheet" href="css/style.css">
-</head>
-
-<body>
-
-  <!-- Navbar start -->
-  <!-- <nav class="navbar">
-    <a href="#" class="navbar-logo">Angkringan <span>Nih</span>.</a>
-
-    <div class="navbar-nav">
-      <a href="#home">Home</a>
-      <a href="#about">Tentang Kami</a>
-      <a href="#menu">Menu</a>
-      <a href="#products">Produk</a>
-      <a href="#contact">Kontak</a>
-    </div>
-
-    <div class="navbar-extra">
-      <a href="#" id="search-button"><i data-feather="search"></i></a>
-      <a href="#" id="shopping-cart-button"><i data-feather="shopping-cart"></i></a>
-      <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
-    </div>
-
-    <-- Search Form start -->
-    <!-- <div class="search-form">
-      <input type="search" id="search-box" placeholder="search here...">
-      <label for="search-box"><i data-feather="search"></i></label>
-    </div> -->
-    <!-- Search Form end -->
-
-    <!-- Shopping Cart start -->
-    <!-- <div class="shopping-cart">
-      <div class="cart-item">
-        <img src="img/products/1.jpg" alt="Product 1">
-        <div class="item-detail">
-          <h3>Product 1</h3>
-          <div class="item-price">IDR 30K</div>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="./kebutuhan/img/icon.jpg" type="image/x-icon">
+    <title>Angkringan SKUT</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <!-- Bulma Version 0.9.4-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" type="text/css" href="/kebutuhan/hero.css">
+    <link rel="stylesheet" href="https://unpkg.com/bulma-modal-fx/dist/css/modal-fx.min.css" />
+    <style>
+    .columns:nth-child(2)
+    {margin-top: -10rem;}
+    ::-webkit-scrollbar{height:10px;width:10px}::-webkit-scrollbar-track{background:#efefef;border-radius:6px}::-webkit-scrollbar-thumb{background:#d5d5d5;border-radius:6px}::-webkit-scrollbar-thumb:hover{background:#c4c4c4}
+    </style>
+  </head>
+  <body>
+    <!-- basenya MULAI -->
+    <section class="hero is-info is-small">
+      <div class="hero-body">
+        <div id="navbarMenu" class="navbar-menu">
+            <div class="navbar-end">
+                <div class="tabs is-right">
+                    <ul>
+                        <li><a href="./pages/article.html">Article</a></li>
+                        <li><a href="">Examples</a></li>
+                        <li><a href="">Features</a></li>
+                        <li><a href="">Team</a></li>
+                        <li><a href="">Help</a></li>
+                    </ul>
+                    <span class="navbar-item">
+                        <a class="button is-white is-outlined" href="https://github.com/angkringankuy/angkringankuy.github.io">
+                            <span class="icon">
+                                <i class="fa fa-github"></i>
+                            </span>
+                        </a>
+                    </span>
+                </div>
+            </div>
         </div>
-        <i data-feather="trash-2" class="remove-item"></i>
-      </div>
-      <div class="cart-item">
-        <img src="img/products/1.jpg" alt="Product 1">
-        <div class="item-detail">
-          <h3>Product 1</h3>
-          <div class="item-price">IDR 30K</div>
+        <div class="container has-text-centered">
+          <br>
+          <p class="title" id="awaltitle">
+          </p>
+          <p class="subtitle">
+            Subtitle
+          </p>
         </div>
-        <i data-feather="trash-2" class="remove-item"></i>
       </div>
-      <div class="cart-item">
-        <img src="img/products/1.jpg" alt="Product 1">
-        <div class="item-detail">
-          <h3>Product 1</h3>
-          <div class="item-price">IDR 30K</div>
-        </div>
-        <i data-feather="trash-2" class="remove-item"></i>
-      </div>
-    </div> --> 
-    <!-- Shopping Cart end -->
-
-  <!-- </nav> -->
-  <!-- Navbar end -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Angkringan</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#home">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about">Link</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-        </ul>
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
-      </div>
+    </section>
+    <div class="box cta">
+      <p class="has-text-centered">
+        <span class="tag is-primary">New</span> Mulailah Dari Kamu Lalu Berpindah Ke Yang Lain
+      </p>
     </div>
-  </nav>
-  <!-- Hero Section start -->
-  <section class="hero" id="home">
-    <div class="mask-container">
-      <main class="content">
-        <h1>Mari Nikmati Suasana Di <span>Angkringan</span></h1>
-        <p>Makanan Dan Minuman Murah Untuk Semua Orang Termasuk Anak Kos</p>
-      </main>
-    </div>
-  </section>
-  <!-- Hero Section end -->
-
-  <!-- About Section start -->
-  <section id="about" class="about">
-    <h2><span>Tentang</span> Kami</h2>
-
-    <div class="row">
-      <div class="about-img">
-        <img src="img/bghome.png" alt="Tentang Kami">
-      </div>
-      <div class="content">
-        <h3>Kenapa memilih kopi kami?</h3>
-        <p style="text-align: justify;">Angkringan (berasal dari bahasa Jawa angkring ꦲꦁꦏꦿꦁ yang berarti alat dan tempat jualan makanan keliling yang pikulannya berbentuk melengkung ke atas) adalah sebuah gerobak dorong untuk menjual berbagai macam makanan dan minuman</p>
-        <p style="text-align: justify;">Angkringan juga terkenal sebagai tempat yang egaliter karena bervariasinya pembeli yang datang tanpa membeda-bedakan strata sosial atau SARA. Mereka menikmati makanan sambil bebas mengobrol hingga larut malam meskipun tak saling kenal tentang berbagai hal atau kadang berdiskusi tentang topik-topik yang serius. Harganya yang murah dan tempatnya yang santai membuat angkringan sangat populer di tengah kota sebagai tempat persinggahan untuk mengusir lapar atau sekadar melepas lelah.</p>
-      </div>
-    </div>
-  </section>
-  <!-- About Section end -->
-
-  <!-- Menu Section start -->
-  <section id="menu" class="menu">
-    <h2><span>Menu</span> Kami</h2>
-    <p>Ada Beberapa Menu Yang Tersedia Silahkan Di Pesan.
-    </p>
-
-    <div class="row">
-      <div class="menu-card">
-        <img src="img/products/satepuyuh.webp" alt="satepuyuh" class="menu-card-img">
-        <h3 class="menu-card-title">- Sate Puyuh -</h3>
-        <p class="menu-card-price">IDR 2K Pertusuk</p>
-      </div>
-      <div class="menu-card">
-        <img src="img/products/kopi jos arang.jpeg" alt="Kopijos" class="menu-card-img">
-        <h3 class="menu-card-title">- Kopi Jos -</h3>
-        <p class="menu-card-price">IDR 7K</p>
-      </div>
-      <div class="menu-card">
-        <img src="img/products/wedang.webp" alt="Wedang" class="menu-card-img">
-        <h3 class="menu-card-title">- Wedang -</h3>
-        <p class="menu-card-price">IDR 10K</p>
-      </div>
-      <div class="menu-card">
-        <img src="img/products/satupaket.webp" alt="Satupaket" class="menu-card-img">
-        <h3 class="menu-card-title">- Satu Paket Makan -</h3>
-        <p class="menu-card-price">IDR 15K</p>
-      </div>
-      <div class="menu-card">
-        <img src="img/products/satebakso.webp" alt="Satebakso" class="menu-card-img">
-        <h3 class="menu-card-title">- Sate Bakso -</h3>
-        <p class="menu-card-price">IDR 3K Pertusuk</p>
-      </div>
-      <div class="menu-card">
-        <img src="img/products/satekerang.jpg" alt="Satekerang" class="menu-card-img">
-        <h3 class="menu-card-title">- Sate Kerang -</h3>
-        <p class="menu-card-price">IDR 3K Pertusuk</p>
-      </div>
-    </div>
-  </section>
-  <!-- Menu Section end -->
-
-  <!-- Products Section start -->
-  <section class="products" id="products">
-    <h2><span>Produk Unggulan</span> Kami</h2>
-    <p>Ini Adalah Makanan Dan Minuman Yang Sering Di Pesan Dan Terbaik.</p>
-
-    <div class="row">
-      <div class="product-card">
-        <div class="product-icons">
-          <a href="#"><i data-feather="shopping-cart"></i></a>
-          <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
-        </div>
-        <div class="product-image">
-          <img src="img/products/satupaket.jpg" alt="Product 1">
-        </div>
-        <div class="product-content">
-          <h3>Satu Paket</h3>
-          <div class="product-stars">
-            <i data-feather="star" class="star-full"></i>
-            <i data-feather="star" class="star-full"></i>
-            <i data-feather="star" class="star-full"></i>
-            <i data-feather="star" class="star-full"></i>
-            <i data-feather="star"></i>
+    <section class="container">
+        <div class="column is-4">
+          <div class="card is-shady">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="https://res.cloudinary.com/crakerss/image/upload/c_scale,q_auto:eco,w_1440/v1502988509/background_conifer/MS.jpg" alt="Placeholder image">
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="content">
+                <h4>Tempor orci dapibus faber in.</h4>
+                <p>Ut venenatis tellus in metus vulputate. Amet consectetur adipiscing elit pellentesque. Sed arcu non odio euismod lacinia at quis risus. Faucibus turpis in eu mi bibendum neque egestas cmonsu songue. Phasellus vestibulum lorem
+                sed risus.</p>
+                <span class="button is-link modal-button" data-target="modal-card">Modal Card</span>
+              </div>
+            </div>
           </div>
-          <div class="product-price">IDR 15K <span>IDR 20K</span></div>
+        </div>
+    </section>
+    <!-- SAMPAI SINI -->
+    <!-- ini iseng footer aja -->
+    <footer>
+      <div class="content has-text-centered">
+        <div class="control level-item">
+          <a href="https://github.com/angkringankuy/angkringankuy.github.io">
+            <div class="tags has-addons">
+              <span class="tag is-dark">Angkringan SKUY</span>
+              <span class="tag is-info">MIT license</span>
+            </div>
+          </a>
         </div>
       </div>
-      <div class="product-card">
-        <div class="product-icons">
-          <a href="#"><i data-feather="shopping-cart"></i></a>
-          <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
-        </div>
-        <div class="product-image">
-          <img src="img/products/wedang.webp" alt="Product 1">
-        </div>
-        <div class="product-content">
-          <h3>Wedang</h3>
-          <div class="product-stars">
-            <i data-feather="star"></i>
-            <i data-feather="star"></i>
-            <i data-feather="star"></i>
-            <i data-feather="star"></i>
-            <i data-feather="star"></i>
+    </footer>
+    <!-- sampai sini gausah di apa apain aja -->
+    <!-- FUNGSI CARD ANIMATION (JANGAN DI ACAK2)-->
+    <div id="modal-card" class="modal modal-fx-3dSlit">
+      <div class="modal-background"></div>
+      <div class="modal-content is-tiny">
+        <!-- content -->
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="https://images.unsplash.com/photo-1515555230216-82228b88ea98?auto=format&amp;fit=crop&amp;w=900&amp;q=60" alt="Placeholder image">
+            </figure>
           </div>
-          <div class="product-price">IDR 10K <span></span></div>
-        </div>
-      </div>
-      <div class="product-card">
-        <div class="product-icons">
-          <a href="#"><i data-feather="shopping-cart"></i></a>
-          <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
-        </div>
-        <div class="product-image">
-          <img src="img/products/kopi jos arang.jpeg" alt="Product 1">
-        </div>
-        <div class="product-content">
-          <h3>Kopi Jos</h3>
-          <div class="product-stars">
-            <i data-feather="star"></i>
-            <i data-feather="star"></i>
-            <i data-feather="star"></i>
-            <i data-feather="star"></i>
-            <i data-feather="star"></i>
+          <div class="card-content">
+            <div class="media">
+              <div class="media-left">
+                <figure class="image is-48x48">
+                  <img src="https://res.cloudinary.com/ameo/image/upload/v1639144778/typocat_svbspx.png" alt="avatar">
+                </figure>
+              </div>
+              <div class="media-content">
+                <p class="title is-4">aa</p>
+                <p class="subtitle is-6">@yahaha</p>
+              </div>
+            </div>
+            <div class="content" id="cardanama">
+            </div>
           </div>
-          <div class="product-price">IDR 7K <span>IDR 10K</span></div>
         </div>
+        <!-- end content -->
       </div>
+      <button class="modal-close is-large" aria-label="close"></button>
     </div>
-  </section>
-  <!-- Products Section end -->
+    <!-- end tiny modal card -->
+    <!-- SAMPAI SINI -->
 
-  <!-- Contact Section start -->
-  <section id="contact" class="contact">
-    <h2><span>Kontak</span> Kami</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, provident.
-    </p>
-
-    <div class="row">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126748.56347862248!2d107.57311709235512!3d-6.903444341687889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e6398252477f%3A0x146a1f93d3e815b2!2sBandung%2C%20Bandung%20City%2C%20West%20Java!5e0!3m2!1sen!2sid!4v1672408575523!5m2!1sen!2sid"
-        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
-
-      <form action="">
-        <div class="input-group">
-          <i data-feather="user"></i>
-          <input type="text" placeholder="nama">
-        </div>
-        <div class="input-group">
-          <i data-feather="mail"></i>
-          <input type="text" placeholder="email">
-        </div>
-        <div class="input-group">
-          <i data-feather="phone"></i>
-          <input type="text" placeholder="no hp">
-        </div>
-        <button type="submit" class="btn">kirim pesan</button>
-      </form>
-
-    </div>
-  </section>
-  <!-- Contact Section end -->
-
-  <!-- Footer start -->
-  <footer>
-    <div class="socials">
-      <a href="#"><i data-feather="instagram"></i></a>
-      <a href="#"><i data-feather="twitter"></i></a>
-      <a href="#"><i data-feather="facebook"></i></a>
-    </div>
-
-    <div class="links">
-      <a href="#home">Home</a>
-      <a href="#about">Tentang Kami</a>
-      <a href="#menu">Menu</a>
-      <a href="#contact">Kontak</a>
-    </div>
-
-    <div class="credit">
-      <p>Created by <a href="">Babang Al</a>. | &copy; 2023.</p>
-    </div>
-  </footer>
-  <!-- Footer end -->
-
-  <!-- Modal Box Item Detail start -->
-  <div class="modal" id="item-detail-modal">
-    <div class="modal-container">
-      <a href="#" class="close-icon"><i data-feather="x"></i></a>
-      <div class="modal-content">
-        <img src="img/products/1.jpg" alt="Product 1">
-        <div class="product-content">
-          <h3>Product 1</h3>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident, tenetur cupiditate facilis obcaecati
-            ullam maiores minima quos perspiciatis similique itaque, esse rerum eius repellendus voluptatibus!</p>
-          <div class="product-stars">
-            <i data-feather="star" class="star-full"></i>
-            <i data-feather="star" class="star-full"></i>
-            <i data-feather="star" class="star-full"></i>
-            <i data-feather="star" class="star-full"></i>
-            <i data-feather="star"></i>
-          </div>
-          <div class="product-price">IDR 30K <span>IDR 55K</span></div>
-          <a href="#"><i data-feather="shopping-cart"></i> <span>add to cart</span></a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Modal Box Item Detail end -->
-
-  <!-- Feather Icons -->
-  <script>
-    feather.replace()
-  </script>
-
-  <!-- My Javascript -->
-  <script src="js/script.js"></script>
-</body>
-
+ <!-- SCRIPT BULMA + INNERTNYA MULAI -->
+    <script src="https://unpkg.com/bulma-modal-fx/dist/js/modal-fx.min.js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.7.0.slim.min.js"
+  integrity="sha256-tG5mcZUtJsZvyKAxYLVXrmjKBVLd6VpVccqz/r4ypFE="
+  crossorigin="anonymous"></script>    
+  <script src="./kebutuhan/wild.js"></script>
+  <script type="module" src="./kebutuhan/script.js"></script>
+  </body>
 </html>
+<!-- sampai sini -->
