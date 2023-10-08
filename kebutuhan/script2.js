@@ -1,9 +1,20 @@
+// The following code is based off a toggle menu by @Bradcomp
+// source: https://gist.github.com/Bradcomp/a9ef2ef322a8e8017443b626208999c1
+(function() {
+    var burger = document.querySelector('.burger');
+    var menu = document.querySelector('#'+burger.dataset.target);
+    burger.addEventListener('click', function() {
+        burger.classList.toggle('is-active');
+        menu.classList.toggle('is-active');
+    });
+})();
+
 import data from "./data.json" assert { type: "json" };
 import { setInner } from "https://jscroot.github.io/element/croot.js";
 
 console.log(`${data.title}`)
 
-setInner("awaltitle", data.title);
+setInner("title", data.title);
 
 setInner("subtitle", data.subtitle);
 
@@ -31,3 +42,4 @@ setInner("kesimpulan", `
 <p>${data.article.kesimpulan2}</p>
 <p>${data.article.kesimpulan3}</p>
 `);
+
