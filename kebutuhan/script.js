@@ -1,22 +1,23 @@
+// The following code is based off a toggle menu by @Bradcomp
+// source: https://gist.github.com/Bradcomp/a9ef2ef322a8e8017443b626208999c1
+(function() {
+    var burger = document.querySelector('.burger');
+    var menu = document.querySelector('#'+burger.dataset.target);
+    burger.addEventListener('click', function() {
+        burger.classList.toggle('is-active');
+        menu.classList.toggle('is-active');
+    });
+})();
+
 import data from "./data.json" assert { type: "json" };
 import { setInner } from "https://jscroot.github.io/element/croot.js";
 
 console.log(`${data.title}`)
 
-setInner("awaltitle", data.title);
+setInner("title", data.title);
 
 setInner("subtitle", data.subtitle);
 
-//card1
-// setInner("cardanama", data.carda.nama);
-// setInner("cardanpm", data.carda.npm);
-// setInner("cardaemail", data.carda.email);
-// setInner("cardatext", data.carda.text);
-// setInner("cardbnama", data.cardb.nama)
-// setInner("cardbnpm", data.cardb.npm)
-// setInner("cardbtext", data.cardb.text)
-// setInner("cardbtext", data.cardb.text)
-//selesai
 setInner("carda", `
 <h2>Team</h2>
 <p>${data.carda.nama}</p>
