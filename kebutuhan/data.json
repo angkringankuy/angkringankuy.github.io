@@ -1,6 +1,6 @@
 {
     "title": "Pembangunan Website Angkringan Online dengan Konsep Serverless Micro Frontend",
-    "subtitle": "kepoah",
+    "subtitle": "PROYEK 3",
     "datanye": [{
         "nama": "GILAR GANTENG AWIKWOKWAOK",
         "npm": "1214022",
@@ -12,6 +12,21 @@
         "email":"gilarwahibul@gmail.com",
         "text":"Kalo Bisa Memilih Dia Kenapa Pilih Kamu"
     },
+    "cardb": {
+        "nama": "Muhammad Syahid Al Fajri",
+        "npm": "1214008",
+        "email":"masyahid963@gmail.com",
+        "text":"Kalo Bisa Memilih Dia Kenapa Harus Dia"
+    },
     "article":{
-        "latarbelakang": "Pengembangan website angkringan online adalah respons terhadap meningkatnya permintaan konsumen untuk pengalaman belanja dan pesan makanan yang praktis. Angkringan, sebuah warung tradisional yang menawarkan kuliner khas, juga ingin memanfaatkan teknologi untuk mencapai lebih banyak pelanggan."
-    }}
+        "latarbelakang": "Pengembangan website angkringan online adalah respons terhadap meningkatnya permintaan konsumen untuk pengalaman belanja dan pesan makanan yang praktis. Angkringan, sebuah warung tradisional yang menawarkan kuliner khas, juga ingin memanfaatkan teknologi untuk mencapai lebih banyak pelanggan.",
+        "latarbelakang2": "Proyek ini bertujuan untuk menggabungkan teknologi serverless dan konsep micro frontend dalam pembangunan website angkringan online. Pendekatan serverless menghilangkan kompleksitas infrastruktur server, sementara micro frontend memungkinkan pengembangan yang efisien dan pemeliharaan yang lebih baik.",
+        "latarbelakang3": "Selain meningkatnya minat dalam kuliner lokal, proyek ini juga merespons tuntutan pasar untuk pengalaman online yang menghadirkan tampilan menu yang menarik, sistem pesanan yang efisien, dan integrasi pembayaran yang aman. Tujuannya adalah memberikan pengalaman online yang sebanding dengan mengunjungi angkringan fisik.",
+        "latarbelakang4": "Proyek ini tidak hanya bertujuan untuk menghadirkan angkringan secara online, tetapi juga untuk meningkatkan efisiensi operasional bisnis angkringan, memperluas peluang pengembangan di masa depan, dan menjaga keberlanjutan bisnis kuliner tradisional dalam era digital.",
+        "deskripsiapk": "Aplikasi ini adalah sebuah platform digital yang memungkinkan Anda untuk menjelajahi dan menikmati kuliner khas angkringan secara online. Dengan tampilan menu yang menarik dan sistem pesanan yang efisien, kami menghadirkan pengalaman belanja makanan yang praktis dan menyenangkan. Apa yang membuat aplikasi ini istimewa adalah penggunaan konsep serverless dan micro frontend, yang mengoptimalkan performa website serta pemeliharaannya. Hal ini memastikan Anda dapat dengan mudah menemukan hidangan favorit Anda, melakukan pemesanan dengan cepat, dan bahkan melakukan pembayaran secara aman.",
+        "deskripsiapk2": "Aplikasi ini juga menciptakan peluang untuk pertumbuhan bisnis angkringan, dengan dasar yang kuat untuk pengembangan potensial di masa depan, termasuk ekspansi menu dan integrasi dengan aplikasi seluler. Kami berkomitmen untuk menjaga keaslian dan keunikan tradisi kuliner angkringan sambil menyediakan pengalaman online yang modern dan efisien bagi pelanggan kami. Jadi, nikmati kelezatan angkringan kapan pun dan di mana pun dengan aplikasi kami yang inovatif ini. Selamat menikmati!",
+        "kesimpulan1": "Dalam proposal ini, kami telah menguraikan rencana pembangunan sebuah website angkringan online yang inovatif dengan konsep serverless micro frontend. Website ini akan menjadi wadah digital untuk memperkenalkan kuliner khas angkringan kepada pelanggan yang mencari pengalaman belanja dan pesan makanan yang praktis. Konsep serverless akan memastikan skalabilitas dan kinerja website yang optimal, sementara penggunaan micro frontend akan memungkinkan pengembangan yang efisien dan pemeliharaan yang lebih baik. Tujuan utama proyek ini adalah untuk memberikan pengalaman online yang sebanding dengan mengunjungi angkringan fisik, dengan tampilan menu yang menarik, sistem pesanan yang efisien, dan integrasi pembayaran yang aman.",
+        "kesimpulan2": "Selain itu, proyek ini juga akan memberikan peluang pengembangan bisnis angkringan yang berkelanjutan di era digital. Dengan menjaga keaslian kuliner angkringan, kami berkomitmen untuk menjadikan website ini sebagai sarana yang memadukan tradisi dengan teknologi.",
+        "kesimpulan3": "Dengan dukungan dari tim yang berpengalaman dan strategi pemasaran yang terarah, kami yakin bahwa website angkringan online ini akan menjadi pilihan utama bagi pecinta kuliner khas angkringan di seluruh wilayah. Kami berharap agar proposal ini mendapat persetujuan dan dukungan untuk memulai pembangunan proyek yang menjanjikan ini. Terima kasih atas perhatiannya."
+        }
+    }
