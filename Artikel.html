@@ -4,13 +4,13 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="../kebutuhan/img/icon.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="./kebutuhan/img/icon.jpg" type="image/x-icon">
     <title>Angkringan SKUT</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <!-- Bulma Version 0.9.4-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <link rel="stylesheet" type="text/css" href="../kebutuhan/hero.css">
+    <link rel="stylesheet" type="text/css" href="/kebutuhan/hero.css">
     <link rel="stylesheet" href="https://unpkg.com/bulma-modal-fx/dist/css/modal-fx.min.css" />
     <style>
     .columns:nth-child(2)
@@ -19,17 +19,18 @@
     </style>
   </head>
   <body>
+    <!-- basenya MULAI -->
     <section class="hero is-info is-small">
       <div class="hero-body">
         <div id="navbarMenu" class="navbar-menu">
             <div class="navbar-end">
                 <div class="tabs is-right">
                     <ul>
-                        <li><a href="">Article</a></li>
-                        <li><a href="">Examples</a></li>
-                        <li><a href="">Features</a></li>
-                        <li><a href="">Team</a></li>
-                        <li><a href="">Help</a></li>
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="Cover.html">Cover</a></li>
+                      <li><a href="Artikel.html">Proposal</a></li>
+                      <li><a href="Team.html">Team</a></li>
+                      <li><a href="">Help</a></li>
                     </ul>
                     <span class="navbar-item">
                         <a class="button is-white is-outlined" href="https://github.com/angkringankuy/angkringankuy.github.io">
@@ -45,8 +46,7 @@
           <br>
           <p class="title" id="awaltitle">
           </p>
-          <p class="subtitle">
-            Subtitle
+          <p class="subtitle" id="subtitle">
           </p>
         </div>
       </div>
@@ -56,14 +56,48 @@
         <span class="tag is-primary">New</span> Mulailah Dari Kamu Lalu Berpindah Ke Yang Lain
       </p>
     </div>
-    <div id="latarbelakang">
+    <section class="container">
+      <div class="content">
+        <h1 id="judulProposal" style="text-align: justify;"></h1>
+        <hr>
+        <div id="latarBelakangProposal" style="text-align: justify;"></div>
+        <hr>
+        <div id="deskripsiWebsite" style="text-align: justify;"></div>
+        <hr>
+        <div id="kesimpulan" style="text-align: justify;"></div>
     </div>
+    </section>
+    <!-- SAMPAI SINI -->
+    <!-- ini iseng footer aja -->
+    <footer>
+      <div class="content has-text-centered">
+        <div class="control level-item">
+          <a href="https://github.com/angkringankuy/angkringankuy.github.io">
+            <div class="tags has-addons">
+              <span class="tag is-dark">Angkringan SKUY</span>
+              <span class="tag is-info">MIT license</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <!-- sampai sini gausah di apa apain aja -->
+    <!-- FUNGSI CARD ANIMATION (JANGAN DI ACAK2)-->
+    <div id="modal-card" class="modal modal-fx-3dSlit">
+      <div class="modal-background"></div>
+      <div class="modal-content is-tiny">
+        <!-- content -->
+    <!-- end tiny modal card -->
+    <!-- SAMPAI SINI -->
+
+ <!-- SCRIPT BULMA + INNERTNYA MULAI -->
     <script src="https://unpkg.com/bulma-modal-fx/dist/js/modal-fx.min.js"></script>
 <script
   src="https://code.jquery.com/jquery-3.7.0.slim.min.js"
   integrity="sha256-tG5mcZUtJsZvyKAxYLVXrmjKBVLd6VpVccqz/r4ypFE="
   crossorigin="anonymous"></script>    
-  <script src="../kebutuhan/wild.js"></script>
-  <script type="module" src="../kebutuhan/script.js"></script>
+  <script src="./kebutuhan/wild.js"></script>
+  <script type="module" src="./kebutuhan/script2.js"></script>
   </body>
 </html>
+<!-- sampai sini -->
