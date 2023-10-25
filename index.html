@@ -1,169 +1,94 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="./kebutuhan/img/icon.jpg" type="image/x-icon">
-    <title>Angkringan SKUT</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <!-- Bulma Version 0.9.4-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <link rel="stylesheet" type="text/css" href="/kebutuhan/hero.css">
-    <link rel="stylesheet" href="https://unpkg.com/bulma-modal-fx/dist/css/modal-fx.min.css" />
-    <style>
-    .columns:nth-child(2)
-    {margin-top: -10rem;}
-    ::-webkit-scrollbar{height:10px;width:10px}::-webkit-scrollbar-track{background:#efefef;border-radius:6px}::-webkit-scrollbar-thumb{background:#d5d5d5;border-radius:6px}::-webkit-scrollbar-thumb:hover{background:#c4c4c4}
-    </style>
-  </head>
-  <body>
-    <section class="hero is-info is-small is-bold">
-      <div class="hero-body">
-          <nav class="navbar">
-              <div class="container">
-                  <div class="navbar-brand">
-                      <span class="navbar-burger burger" data-target="navbarMenu">
-                          <span></span>
-                          <span></span>
-                          <span></span>
-                      </span>
-                  </div>
-                  <div id="navbarMenu" class="navbar-menu">
-                      <div class="navbar-end">
-                          <div class="tabs is-right">
-                              <ul>
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="Cover.html">Cover</a></li>
-                                <li><a href="Artikel.html">Proposal</a></li>
-                                <li><a href="Team.html">Team</a></li>
-                                <li><a href="contact.html">Contact</a></li>
-                              </ul>
-                              <span class="navbar-item">
-                                  <a class="button is-white is-outlined" href="https://github.com/angkringankuy/angkringankuy.github.io">
-                                      <span class="icon">
-                                          <i class="fa fa-github"></i>
-                                      </span>
-                                  </a>
-                              </span>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </nav>
-      </div>
-      <div class="hero-body">
-          <div class="container has-text-centered">
-              <h1 class="title" id="title">
-              </h1>
-              <h2 class="subtitle" id="subtitle">
-              </h2>
-          </div>
-      </div>
-  </section>
-    <div class="box cta">
-      <p class="has-text-centered">
-        <span class="tag is-primary">New</span> Mulailah Dari Kamu Lalu Berpindah Ke Yang Lain
-      </p>
-    </div>
-    
-    <section class="container">
-        <div class="row columns is-multiline">
-          <div class="column is-4">
-            <div class="card is-shady">
-              <div class="card-image">
-                <figure class="image is-4by3">
-                  <img src="https://res.cloudinary.com/crakerss/image/upload/c_scale,q_auto:eco,w_1440/v1502988509/background_conifer/MS.jpg" alt="Placeholder image">
-                </figure>
-              </div>
-              <div class="card-content">
-                <div class="content">
-                  <h4>Tempor orci dapibus faber in.</h4>
-                  <p>Ut venenatis tellus in metus vulputate. Amet consectetur adipiscing elit pellentesque. Sed arcu non odio euismod lacinia at quis risus. Faucibus turpis in eu mi bibendum neque egestas cmonsu songue. Phasellus vestibulum lorem
-                  sed risus.</p>
-                  <span class="button is-link modal-button" data-target="modal-card">Modal Card</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="column is-4">
-            <div class="card is-shady">
-              <div class="card-image">
-                <figure class="image is-4by3">
-                  <img src="./kebutuhan/img/logo.png" alt="Placeholder image">
-                </figure>
-              </div>
-              <div class="card-content">
-                <div class="content">
-                  <h4>Proposal.</h4>
-                  <p>Ut venenatis tellus in metus vulputate. Amet consectetur adipiscing elit pellentesque. Sed arcu non odio euismod lacinia at quis risus. Faucibus turpis in eu mi bibendum neque egestas cmonsu songue. Phasellus vestibulum lorem
-                  sed risus.</p>
-                  <span class="button is-link modal-button"><a href="Artikel.html" style="color: white;">Lihat Proposal</a></span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-    </section>
-    
-    <!-- SAMPAI SINI -->
-    <!-- ini iseng footer aja -->
-    <footer>
-      <div class="content has-text-centered">
-        <div class="control level-item">
-          <a href="https://github.com/angkringankuy/angkringankuy.github.io">
-            <div class="tags has-addons">
-              <span class="tag is-dark">Angkringan SKUY</span>
-              <span class="tag is-info">MIT license</span>
-            </div>
-          </a>
-        </div>
-      </div>
-    </footer>
-    <!-- sampai sini gausah di apa apain aja -->
-    <!-- FUNGSI CARD ANIMATION (JANGAN DI ACAK2)-->
-    <div id="modal-card" class="modal modal-fx-3dSlit">
-      <div class="modal-background"></div>
-      <div class="modal-content is-tiny">
-        <!-- content -->
-        <div class="card">
-          <div class="card-image">
-            <figure class="image is-4by3">
-              <img src="https://images.unsplash.com/photo-1515555230216-82228b88ea98?auto=format&amp;fit=crop&amp;w=900&amp;q=60" alt="Placeholder image">
-            </figure>
-          </div>
-          <div class="card-content">
-            <div class="media">
-              <div class="media-left">
-                <figure class="image is-48x48">
-                  <img src="https://res.cloudinary.com/ameo/image/upload/v1639144778/typocat_svbspx.png" alt="avatar">
-                </figure>
-              </div>
-              <div class="media-content">
-                <p class="title is-4">aa</p>
-                <p class="subtitle is-6">@yahaha</p>
-              </div>
-            </div>
-            <div class="content" id="carda"></div>
-            <div class="content" id="cardb"></div>
-          </div>
-        </div>
-        <!-- end content -->
-      </div>
-      <button class="modal-close is-large" aria-label="close"></button>
-    </div>
-    <!-- end tiny modal card -->
-    <!-- SAMPAI SINI -->
 
- <!-- SCRIPT BULMA + INNERTNYA MULAI -->
-    <script src="https://unpkg.com/bulma-modal-fx/dist/js/modal-fx.min.js"></script>
-<script
-  src="https://code.jquery.com/jquery-3.7.0.slim.min.js"
-  integrity="sha256-tG5mcZUtJsZvyKAxYLVXrmjKBVLd6VpVccqz/r4ypFE="
-  crossorigin="anonymous"></script>    
-  <script src="./kebutuhan/wild.js"></script>
-  <script type="module" src="./kebutuhan/script.js"></script>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Form Login</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.4/css/bulma.min.css" />
+  <link rel="stylesheet" type="text/css" href="./kebutuhan/css/register.css">
+  <script src="https://kit.fontawesome.com/15181efa86.js" crossorigin="anonymous"></script>
+  <script src="./post/cookie.js"></script>
+</head>
+
+<body>
+
+  <section class="hero is-fullheight">
+    <div class="columns is-multiline">
+      <div class="column is-8 is-offset-2 register">
+        <div class="columns">
+          <div class="column left">
+            <h1 class="title is-1">Anjas Warmindo Store</h1>
+            <h2 class="subtitle colored is-4">Yooo Mari Merapat Ngabb.</h2>
+            <p>Tersedia Makanan Minuman Yang Murah Buat Menemani Kegalauan Kalian Semua> Anjasss.</p>
+          </div>
+          <div class="column right has-text-centered">
+            <h1 class="title is-4">Login Ngabb</h1>
+        <div class="field">
+          <div class="control">
+            <input class="input is-medium" type="text" placeholder="budiman" autocomplete="username"
+              id="username" value="syahid" required />
+          </div>
+        </div>
+        <div class="field">
+          <div class="control">
+            <input class="input is-medium" type="password" placeholder="**"
+              autocomplete="current-password" id="password" value="kepo" required />
+          </div>
+        </div>
+        <br />
+        <button class="button is-block is-primary is-fullwidth is-medium" type="submit" id="button"
+          onclick="PostSignUp()">
+          Login
+        </button>
+        <br />
+        <div class="level-item has-text-centered">
+          <a href="signup.html"><em>Ga Ada Akun Ngabkuh? Daftar Dulu Ngabb</em></a>
+        </div>
+        <br />
+              <small><em>Enjoy Order Makanan Dan Minumannya Ngabb.</em></small>
+              </form>
+            </div>
+          </div>
+        </div>
+
+          <div class="column is-8 is-offset-2">
+            <br>
+            <nav class="level">
+              <div class="level-left">
+                <div class="level-item">
+                  <span class="icon">
+                    <i class="fab fa-twitter"></i>
+                  </span> &emsp;
+                  <span class="icon">
+                    <i class="fab fa-facebook"></i>
+                  </span> &emsp;
+                  <span class="icon">
+                    <i class="fab fa-instagram"></i>
+                  </span> &emsp;
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
+                  </span> &emsp;
+                  <span class="icon">
+                    <i class="fas fa-envelope"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="level-right">
+                <small class="level-item" style="color: var(--textLight)">
+                  &copy; Anjas Warmindo Store. All Rights Reserved.
+                </small>
+              </div>
+            </nav>
+          </div>
+        </div>
+        </div>
+        
+
+  </section>
+<script type="module" src="https://rawcdn.githack.com/angkringankuy/crotyajs/fd028b9df95b5193fb6acbb714104dad278e4b2e/post.js"></script>
+</body>
+
 </html>
-<!-- sampai sini -->
