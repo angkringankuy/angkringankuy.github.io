@@ -11,6 +11,19 @@
   <link rel="stylesheet" type="text/css" href="./kebutuhan/css/register.css">
   <script src="https://kit.fontawesome.com/15181efa86.js" crossorigin="anonymous"></script>
   <script src="./post/cookie.js"></script>
+  <script>
+    function checkPageExists() {
+        var requestedPage = location.pathname; // Mendapatkan path halaman yang diminta
+        var validPages = ["/", "index", "/index"]; // Daftar halaman yang ada
+
+        if (!validPages.includes(requestedPage)) {
+            // Halaman yang diminta tidak ada dalam daftar halaman yang ada
+            window.location.href = '/404.html';
+        }
+    }
+
+    window.addEventListener('load', checkPageExists);
+</script>
 </head>
 
 <body>
