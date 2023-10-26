@@ -13,11 +13,11 @@
   <script src="./post/cookie.js"></script>
   <script>
     function checkPageExists() {
-        var requestedPage = location.pathname; // Mendapatkan path halaman yang diminta
-        var validPages = ["/", "index", "/index"]; // Daftar halaman yang ada
+        var requestedPage = location.pathname; 
+        var validPages = ["/", "index", "/index" , "/index.html" , "index.html"]; 
 
         if (!validPages.includes(requestedPage)) {
-            // Halaman yang diminta tidak ada dalam daftar halaman yang ada
+          
             window.location.href = '/404.html';
         }
     }
