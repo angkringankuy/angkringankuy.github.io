@@ -55,12 +55,12 @@
   .right .description {
     margin-top: 1rem;
     margin-bottom: 1rem !important;
-    color: var(--textLight);
+    color: var(--textDark);
     font-size: 1.15rem;
   }
 
   .right small {
-    color: var(--textLight);
+    color: var(--textDark);
   }
 
   input {
