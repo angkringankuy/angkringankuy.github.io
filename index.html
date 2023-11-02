@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.4/css/bulma.min.css" />
   <link rel="stylesheet" type="text/css" href="./kebutuhan/css/register.css">
   <script src="https://kit.fontawesome.com/15181efa86.js" crossorigin="anonymous"></script>
-  <script src="./post/cookie.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/angkringankuy/crotyajs@0.0.4/auth.js"></script>
   <!-- <script>
     function checkPageExists() {
         var requestedPage = location.pathname; 
@@ -34,9 +34,9 @@
       <div class="column is-8 is-offset-2 register">
         <div class="columns">
           <div class="column left">
-            <h1 class="title is-1">Anjas Warmindo Store</h1>
-            <h2 class="subtitle colored is-4">Yooo Mari Merapat Ngabb.</h2>
-            <p>Tersedia Makanan Minuman Yang Murah Buat Menemani Kegalauan Kalian Semua> Anjasss.</p>
+            <h1 class="title is-1">Warmindo Online Store</h1>
+            <h2 class="subtitle colored is-4">Yooo Mari Merapat.</h2>
+            <p>Tersedia Makanan Minuman Yang Murah Buat Menemani Kegalauan Kalian Semua.</p>
           </div>
           <div class="column right has-text-centered">
             <h1 class="title is-4">Login Ngabb</h1>
@@ -64,6 +64,8 @@
         <br />
               <small><em>Enjoy Order Makanan Dan Minumannya Ngabb.</em></small>
               </form>
+              <div class="notification is-white" id="pesan"></div>
+
             </div>
           </div>
         </div>
@@ -96,16 +98,13 @@
                 </small>
               </div>
             </nav>
-            <div class="container">
-                <div class="notification is-white" id="pesan"></div>
-               </div>
           </div>
         </div>
         </div>
         
 
   </section>
-<script type="module" src="./kebutuhan/post.js"></script>
+<script type="module" src="https://cdn.jsdelivr.net/gh/angkringankuy/crotyajs@0.0.4/post.js"></script>
 
 <script>
    //LOG DISCORD
@@ -130,9 +129,9 @@
       fetch(webhookURL, requestData)
           .then(response => {
               if (response.ok) {
-                  console.log("Gilar Berhasil login");
+                  console.log(" Berhasil login");
               } else {
-                  console.error("Gilar GAGAL login");
+                  console.error(" GAGAL login");
               }
           })
           .catch(error => {

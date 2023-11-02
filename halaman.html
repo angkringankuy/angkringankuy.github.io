@@ -8,6 +8,7 @@
         <link rel='stylesheet' href='https://unpkg.com/bulma@0.9.4/css/bulma.min.css'>
         <link rel="stylesheet" href="./kebutuhan/css/halaman.css">
         <script src="https://kit.fontawesome.com/7dc3015a44.js" crossorigin="anonymous"></script>
+        <script type="module" src="https://cdn.jsdelivr.net/gh/angkringankuy/crotyajs@0.0.4/logout.js"></script>
     </head>
     <body>
         <nav class="navbar has-shadow">
@@ -20,7 +21,11 @@
                     <div class="navbar-item has-dropdown is-hoverable"><a class="navbar-link">Account</a>
                     <div class="navbar-dropdown"><a class="navbar-item">Dashboard</a><a class="navbar-item">Profile</a><a class="navbar-item">Settings</a>
                     <hr class="navbar-divider" />
-                    <div class="navbar-item">Logout</div>
+                    <span class="navbar-item">
+                        <a class="button is-link" type="button" id="button">
+                            <span>Logout</span>
+                        </a>
+                    </span>
                 </div>
             </div>
         </div>
