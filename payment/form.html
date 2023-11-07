@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Tanpa Input User</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f2f2f2;
+        }
+        .container {
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            width: 300px;
+        }
+        form {
+            text-align: left;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input {
+            width: 100%;
+            padding: 5px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[readonly], input[disabled] {
+            background-color: #f2f2f2;
+        }
+        input[type="submit"] {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Form Tanpa Input User</h2>
+        <form>
+            <label for="input1">Input 1:</label>
+            <input type="text" id="input1" name="input1">
+
+            <label for="input2">Input 2:</label>
+            <input type="text" id="input2" name="input2">
+
+            <label for="input3">Input 3:</label>
+            <input type="text" id="input3" name="input3" value="Nilai Input 3" disabled>
+
+            <label for="input4">Input 4 (dinonaktifkan):</label>
+            <input type="text" id="input4" name="input4" value="Nilai Input 4" disabled>
+
+            <input type="submit" value="Kirim">
+        </form>
+    </div>
+</body>
+<script>
+    function updateProposalHeading() {
+        const proposalHeading = document.getElementById("proposalHeading");
+        const input4 = document.getElementById("input4");
+
+        // Ambil nilai teks dari elemen proposalHeading
+        const proposalText = proposalHeading.textContent;
+
+        // Tetapkan nilai teks proposalText ke elemen input4
+        input4.value = proposalText;
+    }
+</script>
+</html>

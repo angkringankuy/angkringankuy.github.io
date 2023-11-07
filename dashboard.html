@@ -110,6 +110,23 @@
             </div>
           </div>
         </div>
+        <div class="column is-4">
+          <div class="card is-shady">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="./kebutuhan/img/logo.png" alt="Placeholder image">
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="content">
+                <h4>Proposal.</h4>
+                <p>pulsa 5k</p>
+                <span class="button is-link modal-button"><a href="./payment/form.html" style="color: white;" onclick="updateProposalHeading()">Lihat payment</a></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     
     <!-- SAMPAI SINI -->
@@ -163,6 +180,18 @@
 
  <!-- SCRIPT BULMA + INNERTNYA MULAI -->
     <script src="https://unpkg.com/bulma-modal-fx/dist/js/modal-fx.min.js"></script>
+    <script>
+      function updateProposalHeading() {
+          const proposalHeading = document.getElementById("proposalHeading");
+          const input4 = document.getElementById("input4");
+
+          // Ambil nilai teks dari elemen proposalHeading
+          const proposalText = proposalHeading.textContent;
+
+          // Tetapkan nilai teks proposalText ke elemen input4
+          input4.value = proposalText;
+      }
+  </script>
 <script
   src="https://code.jquery.com/jquery-3.7.0.slim.min.js"
   integrity="sha256-tG5mcZUtJsZvyKAxYLVXrmjKBVLd6VpVccqz/r4ypFE="
