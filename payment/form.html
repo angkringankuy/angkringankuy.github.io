@@ -42,7 +42,7 @@
             cursor: pointer;
         }
     </style>
-        <!-- <script type="module" src="../kebutuhan/payment.js"></script> -->
+        <script type="module" src="../kebutuhan/payment.js"></script>
  <script>
     // Generate a random number for Input 3
     function generateRandomNumber() {
@@ -52,7 +52,7 @@
 
         // Update the action URL with the randomValue
         const form = document.querySelector('form');
-        form.action = `./Payment/examples/snap/checkout-process.php?order_id=${randomValue}`;
+        form.action = `https://tpayment.yumecity.site/Payment/examples/snap/checkout-process.php?order_id=${randomValue}`;
     }
 
     // Call the function to generate the random number and update the URL when the page loads
@@ -62,7 +62,7 @@
 <body>
     <div class="container">
         <h2>Form Tanpa Input User</h2>
-        <form action="./Payment/examples/snap/checkout-process.php?order_id=2121" method="post">
+        <form action="https://tpayment.yumecity.site/Payment/examples/snap/checkout-process.php?order_id=732679239" method="post">
             <label for="input1">Input 1:</label>
             <input type="text" id="email" name="input1">
 
