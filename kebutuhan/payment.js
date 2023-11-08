@@ -29,41 +29,8 @@ document.addEventListener("DOMContentLoaded", function() {
         };
         return data
     }
-
+    
     export function ResponsePost(result) {
-        if (result.status === "true") {
-            showSuccessAlert("Pembayaran berhasil!");
-        } else {
-            showErrorAlert("Pembayaran gagal. Silakan coba lagi.");
-        }
+        AlertPost(result);
+        alert("Berhasil membuat data pembayaran");
     }
-    
-    export function showSuccessAlert(result) {
-        const alertElement = document.createElement("div");
-        alertElement.className = "alert alert-success";
-        alertElement.textContent = result;
-    
-        const form = document.querySelector("form");
-        form.parentNode.insertBefore(alertElement, form.nextSibling);
-    
-        // Hapus pesan setelah beberapa detik (misalnya, 5 detik)
-        setTimeout(() => {
-            alertElement.remove();
-        }, 5000);
-    }
-    
-    export function showErrorAlert(result) {
-        const alertElement = document.createElement("div");
-        alertElement.className = "alert alert-danger";
-        alertElement.textContent = result;
-    
-        const form = document.querySelector("form");
-        form.parentNode.insertBefore(alertElement, form.nextSibling);
-    
-        // Hapus pesan setelah beberapa detik (misalnya, 5 detik)
-        setTimeout(() => {
-            alertElement.remove();
-        }, 5000);
-    }
-
-  
