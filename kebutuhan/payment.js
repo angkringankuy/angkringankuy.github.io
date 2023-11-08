@@ -30,8 +30,6 @@ document.addEventListener("DOMContentLoaded", function() {
         return data
     }
     
-    export function ResponsePost(result, window) {
-        AlertPost(result);
-        window.alert("Berhasil Membuat Data Pembayaran");
-
+    export function ResponsePost( window) {
+        window.AlertPost("Berhasil Membuat Data Pembayaran");
     }
