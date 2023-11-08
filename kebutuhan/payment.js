@@ -31,6 +31,6 @@ document.addEventListener("DOMContentLoaded", function() {
     }
     
     export function ResponsePost(result) {
-        AlertPost(result);
-        alert("Berhasil membuat data pembayaran");
+        AlertPost(result === "Berhasil Membuat Data Pembayaran");
+
     }
