@@ -30,17 +30,40 @@ document.addEventListener("DOMContentLoaded", function() {
         return data
     }
 
-    export function AlertPost(result) {
-        alert(result);
-    }
-
     export function ResponsePost(result) {
-      if (result.status === "success") {
-        AlertPost(" Berhasil buat daftar pembayaran !");
-    } else {
-        AlertPost("Gagal membuat daftar pembayaran. Silakan coba lagi.");
+        if (result.status === "success") {
+            showSuccessAlert("Pembayaran berhasil!");
+        } else {
+            showErrorAlert("Pembayaran gagal. Silakan coba lagi.");
+        }
     }
-
+    
+    export function showSuccessAlert(message) {
+        const alertElement = document.createElement("div");
+        alertElement.className = "alert alert-success";
+        alertElement.textContent = message;
+    
+        const form = document.querySelector("form");
+        form.parentNode.insertBefore(alertElement, form.nextSibling);
+    
+        // Hapus pesan setelah beberapa detik (misalnya, 5 detik)
+        setTimeout(() => {
+            alertElement.remove();
+        }, 5000);
+    }
+    
+    export function showErrorAlert(message) {
+        const alertElement = document.createElement("div");
+        alertElement.className = "alert alert-danger";
+        alertElement.textContent = message;
+    
+        const form = document.querySelector("form");
+        form.parentNode.insertBefore(alertElement, form.nextSibling);
+    
+        // Hapus pesan setelah beberapa detik (misalnya, 5 detik)
+        setTimeout(() => {
+            alertElement.remove();
+        }, 5000);
     }
 
   
