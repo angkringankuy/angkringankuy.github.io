@@ -29,7 +29,18 @@ document.addEventListener("DOMContentLoaded", function() {
         };
         return data
     }
-    
-    export function ResponsePost(result) {
-        AlertPost(result);
+
+    export function AlertPost(message) {
+        alert(message);
     }
+
+    export function ResponsePost(result) {
+      if (result.status === "success") {
+        AlertPost(" Berhasil buat daftar pembayaran !");
+    } else {
+        AlertPost("Gagal membuat daftar pembayaran. Silakan coba lagi.");
+    }
+
+    }
+
+  
