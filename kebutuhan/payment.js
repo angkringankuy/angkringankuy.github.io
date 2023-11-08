@@ -6,8 +6,7 @@ export let token = 'token';
 document.addEventListener("DOMContentLoaded", function() {
     const form = document.querySelector("form");
 
-    form.addEventListener("submit", function(event, window) {
-        window.alert("Berhasil Membuat Data Pembayaran");
+    form.addEventListener("submit", function(event) {
         event.preventDefault();
         let data = GetDataForm();
         postWithBearer(URLPost, token, data, ResponsePost)
@@ -31,7 +30,8 @@ document.addEventListener("DOMContentLoaded", function() {
         return data
     }
     
-    export function ResponsePost(result) {
+    export function ResponsePost(result, window) {
         AlertPost(result);
+        window.alert("Berhasil Membuat Data Pembayaran");
 
     }
