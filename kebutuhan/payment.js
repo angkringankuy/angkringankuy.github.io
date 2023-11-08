@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     export function ResponsePost(result) {
-        if (result.status === "success") {
+        if (result.status === "true") {
             showSuccessAlert("Pembayaran berhasil!");
         } else {
             showErrorAlert("Pembayaran gagal. Silakan coba lagi.");
