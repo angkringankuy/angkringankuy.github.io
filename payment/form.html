@@ -42,37 +42,41 @@
             cursor: pointer;
         }
     </style>
+        <script type="module" src="../kebutuhan/payment.js"></script>
+ <script>
+    // Generate a random number for Input 3
+    function generateRandomNumber() {
+        const orderid = document.getElementById("orderid");
+        const randomValue = Math.floor(Math.random() * 6000); // Change the range as needed
+        orderid.value = randomValue;
+
+        // Update the action URL with the randomValue
+        const form = document.querySelector('form');
+        form.action = `./Payment/examples/snap/checkout-process.php?order_id=${randomValue}`;
+    }
+
+    // Call the function to generate the random number and update the URL when the page loads
+    window.onload = generateRandomNumber;
+</script>
 </head>
 <body>
     <div class="container">
         <h2>Form Tanpa Input User</h2>
-        <form>
+        <form action="./Payment/examples/snap/checkout-process.php?order_id=2121" method="post">
             <label for="input1">Input 1:</label>
-            <input type="text" id="input1" name="input1">
+            <input type="text" id="email" name="input1">
 
             <label for="input2">Input 2:</label>
-            <input type="text" id="input2" name="input2">
+            <input type="text" id="nohp" name="input2">
 
             <label for="input3">Input 3:</label>
-            <input type="text" id="input3" name="input3" value="Nilai Input 3" disabled>
+            <input type="text" id="orderid" name="input3" disabled>
 
             <label for="input4">Input 4 (dinonaktifkan):</label>
-            <input type="text" id="input4" name="input4" value="Nilai Input 4" disabled>
+            <input type="text" id="infobeli" name="input4" value="pulsa 5k" disabled>
 
-            <input type="submit" value="Kirim">
+            <input type="submit" value="Kirim" >
         </form>
     </div>
 </body>
-<script>
-    function updateProposalHeading() {
-        const proposalHeading = document.getElementById("proposalHeading");
-        const input4 = document.getElementById("input4");
-
-        // Ambil nilai teks dari elemen proposalHeading
-        const proposalText = proposalHeading.textContent;
-
-        // Tetapkan nilai teks proposalText ke elemen input4
-        input4.value = proposalText;
-    }
-</script>
 </html>

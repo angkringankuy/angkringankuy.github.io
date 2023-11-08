@@ -1,0 +1,6 @@
+[02-Nov-2023 20:22:20 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/yumecity/tpayment.yumecity.site/koneksi.php on line 6
+[02-Nov-2023 20:22:20 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/yumecity/tpayment.yumecity.site/prosespayment.php on line 14
+[02-Nov-2023 20:29:03 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/yumecity/tpayment.yumecity.site/koneksi.php on line 6
+[02-Nov-2023 20:29:03 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/yumecity/tpayment.yumecity.site/prosespayment.php on line 14
+[02-Nov-2023 20:35:35 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/yumecity/tpayment.yumecity.site/koneksi.php on line 6
+[02-Nov-2023 20:35:35 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/yumecity/tpayment.yumecity.site/prosespayment.php on line 14

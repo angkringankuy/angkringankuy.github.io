@@ -38,7 +38,7 @@
                                 <li><a href="Cover.html">Cover</a></li>
                                 <li><a href="Artikel.html">Proposal</a></li>
                                 <li><a href="Team.html">Team</a></li>
-                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="#contact">Contact</a></li>
                               </ul>
                               <span class="navbar-item">
                                   <a class="button is-white is-outlined" href="https://github.com/angkringankuy/angkringankuy.github.io">
@@ -60,8 +60,7 @@
       </div>
       <div class="hero-body">
           <div class="container has-text-centered">
-              <h1 class="title" id="title">
-              </h1>
+              <h1 class="title" id="title">Wellcome to Website Online Store</h1>
               <h2 class="subtitle" id="subtitle">
               </h2>
           </div>
@@ -119,17 +118,65 @@
             </div>
             <div class="card-content">
               <div class="content">
-                <h4>Proposal.</h4>
+                <h4 id="judulnye">Proposal.</h4>
                 <p>pulsa 5k</p>
-                <span class="button is-link modal-button"><a href="./payment/form.html" style="color: white;" onclick="updateProposalHeading()">Lihat payment</a></span>
+                <span class="button is-link modal-button"><a href="./payment/form.html" style="color: white;">Lihat payment</a></span>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <!-- Contac us -->
+    <section class="hero is-fullheight">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <div class="columns is-8 is-variable ">
+            <div class="column is-two-thirds has-text-left">
+              <h1 class="title is-1" id="contact">Contact Us</h1>
+              <p class="is-size-4">Silahkan Kirim Keluh Kesah Dari Pembelian Di Website Ini.</p>
+              <div class="social-media">
+                <a href="https://facebook.com" target="_blank" class="button is-light is-large"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                <a href="https://instagram.com" target="_blank" class="button is-light is-large"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="https://twitter.com" target="_blank" class="button is-light is-large"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+              </div>
+            </div>
+            <form action="#" method="post">
+            <div class="column right has-text-centered">
+              <div class="field">
+                <label class="label">Name</label>
+                <div class="control">
+                  <input class="input is-medium" type="text" id="name">
+                </div>
+              </div>
+              <div class="field">
+                <label class="label" >Email</label>
+                <div class="control">
+                  <input class="input is-medium" type="text" id="email">
+                </div>
+              </div>
+              <div class="field">
+                <label class="label">Message</label>
+                <div class="control">
+                  <textarea class="input is-medium" type="text" id="message"></textarea>
+                </div>
+              </div>
+              <div class="control">
+                <button class="button is-link is-fullwidth has-text-weight-medium is-medium" type="submit">Send Message</button>
+              </div>
+            </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
     
     <!-- SAMPAI SINI -->
+    <script>
+       const judulElement = document.getElementById("judulnye");
+        const judul = judulElement.textContent;
+        alert("Judul: " + judul); // Menampilkan judul dalam sebuah alert
+    </script>
     <!-- ini iseng footer aja -->
     <footer>
       <div class="content has-text-centered">
@@ -180,18 +227,6 @@
 
  <!-- SCRIPT BULMA + INNERTNYA MULAI -->
     <script src="https://unpkg.com/bulma-modal-fx/dist/js/modal-fx.min.js"></script>
-    <script>
-      function updateProposalHeading() {
-          const proposalHeading = document.getElementById("proposalHeading");
-          const input4 = document.getElementById("input4");
-
-          // Ambil nilai teks dari elemen proposalHeading
-          const proposalText = proposalHeading.textContent;
-
-          // Tetapkan nilai teks proposalText ke elemen input4
-          input4.value = proposalText;
-      }
-  </script>
 <script
   src="https://code.jquery.com/jquery-3.7.0.slim.min.js"
   integrity="sha256-tG5mcZUtJsZvyKAxYLVXrmjKBVLd6VpVccqz/r4ypFE="
