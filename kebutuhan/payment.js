@@ -30,8 +30,8 @@ document.addEventListener("DOMContentLoaded", function() {
         return data
     }
 
-    export function AlertPost(message) {
-        alert(message);
+    export function AlertPost(result) {
+        alert(result);
     }
 
     export function ResponsePost(result) {
