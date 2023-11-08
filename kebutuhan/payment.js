@@ -38,10 +38,10 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
     
-    export function showSuccessAlert(message) {
+    export function showSuccessAlert(result) {
         const alertElement = document.createElement("div");
         alertElement.className = "alert alert-success";
-        alertElement.textContent = message;
+        alertElement.textContent = result;
     
         const form = document.querySelector("form");
         form.parentNode.insertBefore(alertElement, form.nextSibling);
@@ -52,10 +52,10 @@ document.addEventListener("DOMContentLoaded", function() {
         }, 5000);
     }
     
-    export function showErrorAlert(message) {
+    export function showErrorAlert(result) {
         const alertElement = document.createElement("div");
         alertElement.className = "alert alert-danger";
-        alertElement.textContent = message;
+        alertElement.textContent = result;
     
         const form = document.querySelector("form");
         form.parentNode.insertBefore(alertElement, form.nextSibling);
